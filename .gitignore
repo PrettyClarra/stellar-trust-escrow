@@ -13,10 +13,6 @@ npm-debug.log*
 out/
 
 # Environment files — never commit secrets
-.env
-.env.local
-.env.production
-.env.development
 backend/.env
 frontend/.env.local
 
@@ -29,7 +25,6 @@ Thumbs.db
 *.swp
 
 # IDE
-.vscode/settings.json
 .idea/
 *.iml
 
@@ -44,3 +39,4 @@ coverage/
 bundle-stats.json
 
 /ISSUES.md
+config.bat

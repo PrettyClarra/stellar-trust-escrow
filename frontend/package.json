@@ -4,15 +4,15 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
+    "dev": "node init && next dev",
+    "build": "node init && next build",
+    "start": "node init && next start",
     "lint": "next lint",
     "test": "jest --config jest.config.cjs --passWithNoTests",
     "test:coverage": "jest --config jest.config.cjs --coverage --passWithNoTests",
     "format": "prettier --write .",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "node init && storybook build"
   },
   "dependencies": {
     "@sentry/nextjs": "^8.0.0",
