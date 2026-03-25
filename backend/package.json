@@ -5,9 +5,9 @@
   "type": "module",
   "main": "server.js",
   "scripts": {
-    "dev": "nodemon server.js",
-    "build": "echo 'No build step required for backend'",
-    "start": "node server.js",
+    "dev": "node init && nodemon server.js",
+    "build": "node init && echo 'No build step required for backend'",
+    "start": "node init && node server.js",
     "test": "NODE_OPTIONS=--experimental-vm-modules npx jest --runInBand",
     "lint": "eslint .",
     "format": "prettier --write .",
